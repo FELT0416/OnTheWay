@@ -233,7 +233,7 @@ String userId=(String)session.getAttribute("userId");
 		
 		<table id="infoTable" class="table table-bordered" style="width: 80%; max-width: 1200px; margin: 0 auto;">
 			<caption align="top"><b>
-			총<%=dao.getTotalCount() %>개의 게시글이 있습니다
+			총 <%=dao.getTotalCount() %>개의 게시글이 있습니다
 			
 			<input type="text" name="searchrest" id="searchrest" style="width:200px; height:30px; float:right;" placeholder="검색할 휴게소 입력">
 			

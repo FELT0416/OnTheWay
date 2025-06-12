@@ -193,7 +193,7 @@ a.hg_num:hover {
 	.checkbox-group {
 		max-width: 100%; /* 체크박스 그룹 최대 너비 설정 */
 	}
-	
+
 	
 }
 
@@ -239,8 +239,10 @@ if (searchName != null && !searchName.trim().equals("")) {
 		<div id="map"></div> <!-- 지도 표시 영역 -->
 		<br>
 		<br>
+		<caption style="color:gray; margin-left: 10px;"><b>총 <%=list.size()%> 개의 휴게소가 있습니다.</b></caption>
 		<div style="overflow-y: auto; max-height: 400px; width: 1180px;" > <!-- 테이블 영역 -->
 			<table class="table table-bordered" style="width: 1200px;"> <!-- 테이블 설정 -->
+			<thead>
 				<tr class="table-success" align="center"> <!-- 테이블 헤더 -->
 					<th style="width: 50; align: center;">번호</th>
 					<th style="width: 100; align: center;">이름</th>
@@ -248,9 +250,20 @@ if (searchName != null && !searchName.trim().equals("")) {
 					<th style="width: 100; align: center;">평점</th>
 					<th style="width: 200; align: center;">주소</th>
 				</tr>
+			</thead>
 				<%
 				int n = 1; // 번호 카운터
 				int i = 0; // 인덱스 카운터
+				
+				if(list.size()==0)
+				{%>
+					<tr>
+						<td colspan="5" align="center">
+							<b>입력한 휴게소가 없습니다.</b>
+						</td>
+					</tr>
+				<%}
+				else{
 				for (hgRestDto dto : list) { // 리스트를 순회
 					System.out.println("==== dto 디버깅 ===="+i);
 				    System.out.println("ID: " + dto.getId2());
@@ -276,6 +289,7 @@ if (searchName != null && !searchName.trim().equals("")) {
 				</tr>
 				<%
 				i++; // 인덱스 증가
+				}
 				}
 				%>
 			</table>
@@ -315,6 +329,8 @@ if (searchName != null && !searchName.trim().equals("")) {
 			  const markers = [];
 			  const bounds = new kakao.maps.LatLngBounds();
 			  const infowindow = new kakao.maps.InfoWindow({ zIndex: 1 }); // 인포윈도우 객체 생성
+			  
+			  let hasValidMarker = false; // 유효한 마커가 있는지 확인용
 			
 			  for (let i = 0; i < lats.length; i++) {
 			    const lat = parseFloat(lats[i]);
@@ -349,7 +365,12 @@ if (searchName != null && !searchName.trim().equals("")) {
 			  }
 			
 			  clusterer.addMarkers(markers);
-			  map.setBounds(bounds);
+			  if (hasValidMarker) {
+			        map.setBounds(bounds);
+			    } else {
+			        map.setCenter(new kakao.maps.LatLng(36.5, 127.5)); // 기본 위치
+			        map.setLevel(12); // 기본 줌 레벨
+			    }
 			}, 10); // 1초 후 마커 로딩
 		 </script>
 
