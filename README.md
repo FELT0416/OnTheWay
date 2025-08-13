@@ -1,52 +1,78 @@
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=fac1c1&height=300&section=header&text=OnTheWay%20Project!&fontColor=ffffff&fontSize=90">
-</div><br><br>
 
+**장점**
+- header/footer 수정 시 전체 페이지 자동 반영
+- main.jsp 교체만으로 다양한 페이지 제공 가능
+- 페이지 구조와 디자인의 일관성 유지
 
-## 📝 프로젝트 소개 (Project Introduction)
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/e8ea8ea9-4bf1-4cfc-9c50-223b44ac5b21" alt="mainpage" width="800" height="350">
-</div>
-OnTheWay는 운전자와 여행객의 편리한 이동을 돕기 위해 개발된 웹 애플리케이션입니다. 이동 경로상의 휴게소, 편의시설, 입점 매장, 이벤트 정보 등을 통합적으로 제공하여 사용자들에게 최적화된 경로 계획 및 정보 탐색 경험을 선사합니다. 특히, 고속도로 휴게소 내의 브랜드 매장, 편의점, 푸드코트 등 상세 정보를 제공함으로써 사용자가 필요한 정보를 쉽고 빠르게 얻을 수 있도록 지원합니다.<br><br><br><br>
+---
 
+### 2. 메인 페이지
+![메인페이지](./images/main.png)
 
-## 🛠️ 사용된 기술 (Tech Stack)<br>
-### Frontend<br>
-![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white) ![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white) ![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)<br>
-### Backend<br>
-![java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)<br>
-### Database<br>
-![SQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)<br><br>
+**담당 구현**
+- index.jsp에서 header.jsp, main.jsp, footer.jsp 포함하는 기본 틀 제작
+- 메인 화면(`home.jsp`)에 검색창, 이벤트 영역, 공지사항 영역 배치
+- Bootstrap Grid 적용해 반응형 구성
+- 그래픽 디자인 및 스타일링은 디자이너 협업
 
+---
 
-## 👤 사용자 관리 (User Management)
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/eb27b984-2a43-4ac1-adb8-ca7bfd1a4143" alt="user" width="800" height="350">
-</div>
-로그인/회원가입 UI 및 기능 구현: 사용자가 손쉽게 계정을 생성하고 로그인할 수 있도록 직관적인 인터페이스를 설계하고 관련 기능을 개발했습니다.
-사용자 정보 조회 및 수정: 마이페이지에서 사용자가 자신의 정보를 확인하고 수정할 수 있는 기능을 구현하여 사용자 편의성을 높였습니다.<br><br><br><br>
+### 3. 후기/평점 시스템
 
+#### DB 설계
+![리뷰DB](./images/review_db.png)
 
-## ⛽ 휴게소 정보 (Rest Area Information)
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/abba8619-7479-4d34-bb39-2bce4d70be1c" alt="hupage" width="800" height="350">
-</div>
-휴게소 위치 및 기본 정보 UI 구현: 전국 휴게소의 위치와 기본 정보를 시각적으로 명확하게 표시하는 UI를 구현했습니다.
-편의시설 정보 조회: 휴게소 내 음식점, 편의점 등 편의시설 정보를 사용자가 쉽게 찾아볼 수 있도록 인터랙티브한 조회 기능을 개발했습니다.<br>
-🏪 입점 매장 정보 (Store Information)<br>
-브랜드 매장 검색 및 정보 표시: 특정 브랜드가 입점한 휴게소를 검색하고 해당 매장 정보를 효과적으로 보여주는 기능을 개발했습니다.
-편의점 및 푸드코트 정보: 휴게소별 편의점 정보와 푸드코트 메뉴를 상세하게 확인할 수 있는 UI를 구현했습니다.<br><br><br><br>
+**REVIEW**
+| 컬럼명  | 타입         | 설명       |
+|--------|-------------|-----------|
+| num    | INT (PK)    | 리뷰 고유 번호 |
+| user_id| VARCHAR(15) | 사용자 ID |
+| hg_id  | VARCHAR(30) | 휴게소 ID |
+| stars  | DOUBLE      | 평점 |
+| content| VARCHAR(100)| 리뷰 내용 |
+| good   | INT         | 추천 수 |
+| writeday| DATE       | 작성일 |
 
+**GOOD**
+| 컬럼명  | 타입         | 설명       |
+|--------|-------------|-----------|
+| renum  | INT (PK)    | 참조 리뷰 번호 (REVIEW.num) |
+| user_id| VARCHAR(45) | 추천한 사용자 ID |
 
-## 🎉 이벤트 정보 (Event Information)
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/432cb15e-0273-47dc-b7ee-8962c550985f" alt="eventpage" width="800" height="350">
-</div>
-이벤트 목록 및 상세 페이지 구현: 휴게소 및 관련 브랜드의 다양한 이벤트를 모아서 보여주고, 각 이벤트의 상세 정보를 확인할 수 있는 페이지를 개발했습니다.<br><br><br><br>
+📌 GOOD 테이블은 REVIEW.num을 외래키로 참조해 **추천 중복 방지** 구현
 
+---
 
-## 🚗 실시간 교통 정보 (Real-time Traffic)
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/41ded08d-8021-404e-8679-e4db2574f1ce" alt="tra" width="800" height="350">
-</div>
-교통 상황 정보 표시 UI: 주요 도로의 실시간 교통 상황을 한눈에 파악할 수 있도록 시각적으로 구현했습니다. (API 연동)<br><br><br><br>
+### 4. FAQ 페이지
+![FAQ](./images/faq.png)
+
+- main.jsp 영역에 아코디언 UI 구현
+- 현재는 하드코딩 데이터 기반
+- 비회원도 열람 가능
+- 추후 DB 연동 및 관리 기능 확장 가능
+
+---
+
+## 📸 주요 화면
+
+1. **메인 페이지**
+   ![메인페이지](./images/main.png)
+
+2. **FAQ 페이지**
+   ![FAQ](./images/faq.png)
+
+3. **후기 작성 페이지**
+   ![후기작성](./images/review_form.png)
+
+---
+
+## 🚀 프로젝트 성과
+- JSP 모듈화(index.jsp + header.jsp + main.jsp + footer.jsp)로 유지보수성 강화
+- DB 외래키 설계로 추천 중복 방지 기능 구현
+- 메인 페이지 기본 구조 완성 및 디자이너 협업으로 UI 완성도 향상
+- 실제 서비스 수준의 기능 구현 및 시연 가능
+
+---
+
+## 📂 GitHub 링크
+> 추후 GitHub 업로드 시 링크 삽입
