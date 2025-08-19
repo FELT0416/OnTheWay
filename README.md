@@ -10,16 +10,36 @@
 OnTheWay는 운전자와 여행객의 편리한 이동을 돕기 위해 개발된 웹 애플리케이션입니다. 이동 경로상의 휴게소, 편의시설, 입점 매장, 이벤트 정보 등을 통합적으로 제공하여 사용자들에게 최적화된 경로 계획 및 정보 탐색 경험을 선사합니다. 특히, 고속도로 휴게소 내의 브랜드 매장, 편의점, 푸드코트 등 상세 정보를 제공함으로써 사용자가 필요한 정보를 쉽고 빠르게 얻을 수 있도록 지원합니다.<br><br><br><br>
 
 ## 👤 팀원 역할 소개 (Team Roles)
-<div align="center">
-
-| <img src="https://img.shields.io/badge/Project_Leader-FF5733" /> | <img src="https://img.shields.io/badge/Tech_Leader-%2300264B" /> | <img src="https://img.shields.io/badge/Documentation_Leader-%2310069F%20" /> | <img src="https://img.shields.io/badge/Design_Leader-blue" /> |
-| :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------------------: | :-----------------------------------------------------------: |
-|      <img src="https://github.com/" width="120px;" alt=""/>      |      <img src="https://github.com/" width="120px;" alt=""/>      |            <img src="https://github.com/" width="120px;" alt=""/>            |    <img src="https://github.com/" width="120px;" alt=""/>     |
-|           [팀원1 이름](https://github.com/팀원1아이디)           |           [팀원2 이름](https://github.com/팀원2아이디)           |                 [팀원3 이름](https://github.com/팀원3아이디)                 |         [팀원4 이름](https://github.com/팀원4아이디)          |
-|                            기능1 설명                            |                            기능2 설명                            |                                  기능3 설명                                  |                          기능4 설명                           |
-
-</div>
-
+<table>
+<tr>
+<td width="20%" align="center"><img src="https://avatars.githubusercontent.com/u/55340385?s=224&v=4" width="224" height="224" alt="박현규"/></td>
+<td width="20%" align="center"><img src="https://avatars.githubusercontent.com/u/199577596?s=224&v=4" width="224" height="224" alt="김민규"/></td>
+<td width="20%" align="center"><img src="https://avatars.githubusercontent.com/u/144861769?s=224&v=4" width="224" height="224" alt="노일권"/></td>
+<td width="20%" align="center"><img src="https://avatars.githubusercontent.com/u/84963361?s=224&v=4" width="224" height="224" alt="박호준"/></td>
+<td width="20%" align="center"><img src="https://avatars.githubusercontent.com/u/199577470?s=224&v=4" width="224" height="224" alt="조태민"/></td>
+</tr>
+<tr>
+<td align="center"><strong><a href="https://github.com/felt0416">박현규</a></strong></td>
+<td align="center"><strong><a href="https://github.com/ming0-0">김민규</a></strong></td>
+<td align="center"><strong><a href="https://github.com/shdlfrnjs">노일권</a></strong></td>
+<td align="center"><strong><a href="https://github.com/rjqhk12">박호준</a></strong></td>
+<td align="center"><strong><a href="https://github.com/taemin1111111">조태민</a></strong></td>
+</tr>
+<tr>
+<td align="center">팀장</td>
+<td align="center">프론트엔드</td>
+<td align="center">백엔드</td>
+<td align="center">백엔드</td>
+<td align="center">프론트엔드/백엔드</td>
+</tr>
+<tr>
+<td align="center">프로젝트 관리 및 DB 설계, 한국도로공사 API를 활용한 휴게소 상세페이지 구현</td>
+<td align="center">웹사이트 디자인</td>
+<td align="center">한국도로공사 API를 활용한 푸드코트 페이지 구현 및 PortOne Api를 이용한 결제 기능 구현</td>
+<td align="center">한국도로공사 API 및 KakaoMaps API를 활용한 휴게소 검색 페이지 및 기능 구현</td>
+<td align="center">메인 페이지 구현 및 휴게소 리뷰 작성 및 조회 기능 구현</td>
+</tr>
+</table>
 
 ## 🛠️ 사용된 기술 (Tech Stack)<br>
 ### Frontend<br>
