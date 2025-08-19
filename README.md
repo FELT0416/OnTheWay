@@ -9,6 +9,17 @@
 </div>
 OnTheWay는 운전자와 여행객의 편리한 이동을 돕기 위해 개발된 웹 애플리케이션입니다. 이동 경로상의 휴게소, 편의시설, 입점 매장, 이벤트 정보 등을 통합적으로 제공하여 사용자들에게 최적화된 경로 계획 및 정보 탐색 경험을 선사합니다. 특히, 고속도로 휴게소 내의 브랜드 매장, 편의점, 푸드코트 등 상세 정보를 제공함으로써 사용자가 필요한 정보를 쉽고 빠르게 얻을 수 있도록 지원합니다.<br><br><br><br>
 
+## 👤 팀원 역할 소개 (Team Roles)
+<div align="center">
+
+| <img src="https://img.shields.io/badge/Project_Leader-FF5733" /> | <img src="https://img.shields.io/badge/Tech_Leader-%2300264B" /> | <img src="https://img.shields.io/badge/Documentation_Leader-%2310069F%20" /> | <img src="https://img.shields.io/badge/Design_Leader-blue" /> |
+| :--------------------------------------------------------------: | :--------------------------------------------------------------: | :--------------------------------------------------------------------------: | :-----------------------------------------------------------: |
+|      <img src="https://github.com/" width="120px;" alt=""/>      |      <img src="https://github.com/" width="120px;" alt=""/>      |            <img src="https://github.com/" width="120px;" alt=""/>            |    <img src="https://github.com/" width="120px;" alt=""/>     |
+|           [팀원1 이름](https://github.com/팀원1아이디)           |           [팀원2 이름](https://github.com/팀원2아이디)           |                 [팀원3 이름](https://github.com/팀원3아이디)                 |         [팀원4 이름](https://github.com/팀원4아이디)          |
+|                            기능1 설명                            |                            기능2 설명                            |                                  기능3 설명                                  |                          기능4 설명                           |
+
+</div>
+
 
 ## 🛠️ 사용된 기술 (Tech Stack)<br>
 ### Frontend<br>
