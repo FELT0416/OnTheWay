@@ -34,7 +34,7 @@ OnTheWay는 운전자와 여행객의 편리한 이동을 돕기 위해 개발�
 </tr>
 <tr>
 <td align="center">프로젝트 관리 및 DB 설계, 한국도로공사 API를 활용한 휴게소 상세페이지 구현</td>
-<td align="center">웹사이트 디자인</td>
+<td align="center">웹사이트 디자인 및 회원가입 로그인 기능/마이페이지 구현</td>
 <td align="center">한국도로공사 API를 활용한 푸드코트 페이지 구현 및 PortOne Api를 이용한 결제 기능 구현</td>
 <td align="center">한국도로공사 API 및 KakaoMaps API를 활용한 휴게소 검색 페이지 및 기능 구현</td>
 <td align="center">메인 페이지 구현 및 휴게소 리뷰 작성 및 조회 기능 구현</td>
