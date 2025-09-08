@@ -74,10 +74,3 @@ OnTheWay는 운전자와 여행객의 편리한 이동을 돕기 위해 개발�
   <img src="https://github.com/user-attachments/assets/432cb15e-0273-47dc-b7ee-8962c550985f" alt="eventpage" width="800" height="350">
 </div>
 이벤트 목록 및 상세 페이지 구현: 휴게소 및 관련 브랜드의 다양한 이벤트를 모아서 보여주고, 각 이벤트의 상세 정보를 확인할 수 있는 페이지를 개발했습니다.<br><br><br><br>
-
-
-## 🚗 실시간 교통 정보 (Real-time Traffic)
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/41ded08d-8021-404e-8679-e4db2574f1ce" alt="tra" width="800" height="350">
-</div>
-교통 상황 정보 표시 UI: 주요 도로의 실시간 교통 상황을 한눈에 파악할 수 있도록 시각적으로 구현했습니다. (API 연동)<br><br><br><br>
